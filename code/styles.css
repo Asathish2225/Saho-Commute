@@ -18,6 +18,47 @@
     padding: 20px;
     background-color: #fff;
   }
+  @media only screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .logo img {
+      width: 40px; /* Smaller logo for mobile */
+      margin-bottom: 10px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    nav ul li {
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    main {
+      flex-direction: column; /* Stack text and image vertically */
+      padding: 20px;
+    }
+  
+    .text-content h1 {
+      font-size: 32px; /* Adjust heading size for mobile */
+    }
+  
+    .text-content {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .image-content img {
+      width: 100%;
+      max-width: 300px; /* Reduce image size for mobile */
+      height: auto;
+    }
+  }
 
   .logo img {
     width: 50px;  /* Adjust width as necessary */
