@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | Saho Commute</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="vtp.jpg" alt="Saho Commute Logo">
+        <span>Saho Commute</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#" class="login-btn">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="signup-container">
+      <div class="form-container">
+        <h1>Sign up</h1>
+        <p>Join securely on Saho Commute today</p>
+
+        <form enctype="multipart/form-data">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="youremail@example.com" required>
+
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="********" required>
+
+          <label for="phone">Phone Number</label>
+          <div class="phone-input-container">
+            <input type="tel" id="phone" placeholder="+91 9876543210" required>
+            <img src="sendicon.png" alt="Send OTP" class="otp-icon" onclick="sendOTP()">
+          </div>
+
+          <label for="otp">Enter OTP</label>
+          <input type="text" id="otp" placeholder="Enter OTP here" required>
+
+          <label for="profile-photo">Profile Photo</label>
+          <input type="file" id="profile-photo" accept="image/jpeg, image/png">
+
+           <!-- Aadhaar Number -->
+          <label for="aadhaar">Aadhaar Number:</label>
+          <input type="text" id="aadhaar" name="aadhaar" placeholder="Enter your Aadhaar Number" required>
+
+          <label for="id-proof">Government ID Proof</label>
+          <input type="file" id="id-proof" accept="application/pdf, image/jpeg" required>
+
+          <button type="submit" class="signup-btn">Sign Up</button>
+        </form>
+
+        <p class="already-have-account">Already have an account? <a href="#">Login</a></p>
+      </div>
+      <script src="script.js"></script>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>SecureAccess &copy; 2024 Saho Commute, Inc</p>
+    </div>
+  </footer>
+</body>
+</html>

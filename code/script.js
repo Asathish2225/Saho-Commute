@@ -22,3 +22,8 @@ function prevSlide() {
 
 // Initialize the first slide
 showSlide(currentSlide);
+
+function sendOTP() {
+  // Logic to send OTP goes here
+  alert('OTP has been sent!');
+}

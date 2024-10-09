@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    /* background-color: #fff; */
+  }
+  
+  .logo img {
+    width: 50px;  /* Adjust width as necessary */
+    height: 50px; /* Set height equal to width for a perfect circle */
+    border-radius: 50%;
+  }
+  .logo {
+    display: flex;             /* Use flexbox for alignment */
+    align-items: center;      /* Center vertically */
+  }
+
+  .logo span {
+    margin-left: 10px;        /* Space between logo and text */
+    font-size: 24px;  
+    font-weight: bold;        /* Adjust font size as needed */
+  }
+
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  .login-btn {
+    margin-top: 10px; /* Adjust this value as needed */
+  padding: 10px 20px;
+  background-color: #182570d3;
+  border: 1px solid #000;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  }
+  
+  .signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form-container {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 400px;
+  }
+  
+  h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .phone-input-container {
+    position: relative;
+  }
+  
+  #phone {
+    padding-right: 40px; /* Add some padding to the right for the icon */
+    height: 40px; /* Set the height for the input */
+  }
+  
+  .otp-icon {
+    position: absolute;
+    right: 5px; /*Position the icon inside the input*/
+    top: 40%;
+    transform: translateY(-50%); /* Center the icon vertically */
+    width: 30px; /* Set the width for the icon */
+    height: 30px; /* Set the height for the icon */
+    cursor: pointer; /* Change cursor to pointer */
+    pointer-events: auto; /* Ensure it can be clicked */
+  }
+  
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .image-container img {
+    width: 500px;
+  height: 500px;
+  object-fit: contain;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #777;
+  }
+  
+  .already-have-account {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
