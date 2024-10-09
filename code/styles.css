@@ -10,6 +10,7 @@
     background-color: #fff;
     color: #333;
     line-height: 1.6;
+    
   }
   
   header {
@@ -19,46 +20,23 @@
     background-color: #fff;
   }
   @media only screen and (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: center;
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+    nav ul {
+      flex-direction: column;
+      text-align: center;
+    }
+    main {
+      flex-direction: column;
+      padding: 20px;
+    }
+    .text-content, .image-content img {
+      max-width: 100%;
+    }
   }
-
-  .logo img {
-    width: 40px; /* Smaller logo for mobile */
-    margin-bottom: 10px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  nav ul li {
-    margin-left: 0;
-    text-align: center;
-  }
-
-  main {
-    flex-direction: column; /* Stack text and image vertically */
-    padding: 20px;
-  }
-
-  .text-content h1 {
-    font-size: 32px; /* Adjust heading size for mobile */
-  }
-
-  .text-content {
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .image-content img {
-    width: 100%;
-    max-width: 300px; /* Reduce image size for mobile */
-    height: auto;
-  }
-}
+  
 
   .logo img {
     width: 50px;  /* Adjust width as necessary */
@@ -99,8 +77,10 @@
   .login-btn {
     background-color: #182570d3;
     color: white;
-    padding: 15px 25px;
+    padding: 10px 20px;
     border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
   }
   
   main {
@@ -109,15 +89,33 @@
     align-items: center;       /* Vertically center */
     height: 75vh;             /* Full viewport height */
   }
-  
-  
+    /* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 420px;
+    }
+
+    .text-content {
+        width: 80%;
+    }
+    .image-content{
+      width: 80%;
+      height:auto;
+      margin-bottom: 450px;
+    }
+}
   .text-content {
     max-width: 500px;
     margin-right: 20px;
+    /* text-align: center; */
     margin-bottom: 20px;
     
   }
-  
+  .text-content h3{
+    color: #182570d3;
+  }
   .text-content h1 {
     font-size: 53px;
     margin-bottom: 10px;
@@ -135,12 +133,15 @@
     cursor: pointer;
     font-size: 16px;
     margin-top: 10px;
+    border-radius: 5px;
+    font-weight: bold;
   }
   
   .image-content img {
-    max-width: 500px;
-    height: 500px;
-    margin-left: 50px;  /* Add margin to the image for spacing */
+    width: 100%;
+    max-width: 500px; /* Increased responsiveness */
+    height: auto;
+    margin: 0;
     border-radius: 10px;
 }
   
@@ -180,6 +181,7 @@
     text-align: center;
     padding: 50px;
     background-color: #fff;
+    
 }
 
 .features h2 {
@@ -194,11 +196,11 @@
 }
 
 .features-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .feature-card {
@@ -248,6 +250,7 @@
     .features-grid {
         grid-template-columns: 1fr;
     }
+    
 }
 
 /* Commute section */
@@ -460,7 +463,8 @@
   }
   
   .signup-form button:hover {
-    background-color: #ddd;
+    background-color: #f0f0f0; /* Slightly lighter hover effect */
+  color: #333; /* Darker text */
   }
   
   /* Footer Section */
@@ -478,6 +482,7 @@
   }
   
   .footer-brand {
+    flex: 1;
     text-align: left;
   }
   
@@ -495,6 +500,7 @@
   
   .footer-links {
     display: flex;
+    justify-content: flex-end
   }
   
   .footer-column {
@@ -504,7 +510,7 @@
   .footer-column h3 {
     margin-bottom: 10px;
     font-size: 1.1em;
-    color: #333;
+    color: #182570d3;
   }
   
   .footer-column ul {
@@ -522,5 +528,18 @@
   }
   
   .footer-column ul li a:hover {
-    color: #466495;
+    color: #0057b3;
   }
+  /* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
