@@ -4,40 +4,35 @@ const navMenu = document.getElementById('nav-menu');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
-  navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+  const isExpanded = hamburger.classList.contains('active');
+  navMenu.style.display = isExpanded ? 'flex' : 'none';
+  hamburger.setAttribute('aria-expanded', isExpanded);
 });
 
-// Close the menu when clicking outside (optional)
+// Close the menu when clicking outside
 window.addEventListener('click', (e) => {
   if (!header.contains(e.target) && navMenu.style.display === 'flex') {
     hamburger.classList.remove('active');
     navMenu.style.display = 'none';
+    hamburger.setAttribute('aria-expanded', 'false');
   }
 });
 
-// Testimonial Slider
-let currentSlide = 0;
-const slides = document.querySelectorAll('.slide');
-const totalSlides = slides.length;
+// Allow toggling the hamburger menu with keyboard
+hamburger.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' || e.key === ' ') {
+    e.preventDefault();
+    hamburger.click();
+  }
+});
 
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.remove('active');
-    if (i === index) {
-      slide.classList.add('active');
-    }
-  });
+// OTP Functionality (Placeholder)
+function sendOTP() {
+  const phoneInput = document.getElementById('phone').value;
+  if (!phoneInput) {
+    alert('Please enter your phone number first.');
+    return;
+  }
+  // Implement your OTP sending logic here
+  alert(`OTP sent to ${phoneInput}`);
 }
-
-function nextSlide() {
-  currentSlide = (currentSlide + 1) % totalSlides;
-  showSlide(currentSlide);
-}
-
-function prevSlide() {
-  currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-  showSlide(currentSlide);
-}
-
-// Optional: Auto-slide functionality
-setInterval(nextSlide, 5000); // Change slide every 5 seconds
