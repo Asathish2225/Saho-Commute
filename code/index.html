@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Saho Commute</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -11,10 +11,18 @@
   <!-- Header Section -->
   <header>
     <div class="logo">
-        <img src="vtp.jpg" alt="Saho Commute Logo">
-        <span>Saho Commute</span>
+      <img src="images/vtp.jpg" alt="Saho Commute Logo">
+      <span>Saho Commute</span>
     </div>
-    <nav>
+    
+    <!-- Hamburger Menu Icon -->
+    <div class="hamburger" id="hamburger">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
+    <nav id="nav-menu">
       <ul>
         <li><a href="#">User Profile</a></li>
         <li><a href="#">Find Bikes</a></li>
@@ -36,128 +44,129 @@
       </a>
     </div>
     <div class="image-content">
-      <img src="home1.png" alt="App Preview">
+      <img src="images/home1.png" alt="App Preview">
     </div>
   </main>
   
-  <!-- Section for Bike Enthusiasts -->
-<section class="bike-section">
+  <!-- Bike Enthusiasts Section -->
+  <section class="bike-section">
     <div class="content">
       <h2>The #1 app for electric bike enthusiasts</h2>
       <p>As recognized by top mobility tech influencers</p>
       <div class="bike-gallery">
-        <img src="bike0.png" alt="Bike Image 1">
-        <img src="bike1.png" alt="Bike Image 2">
-        <img src="bike2.png" alt="Bike Image 3">
-        <img src="bike3.png" alt="Bike Image 4">
-        <img src="bike4.png" alt="Bike Image 5">
+        <img src="images/bike0.png" alt="Bike Image 1">
+        <img src="images/bike1.png" alt="Bike Image 2">
+        <img src="images/bike2.png" alt="Bike Image 3">
+        <img src="images/bike3.png" alt="Bike Image 4">
+        <img src="images/bike4.png" alt="Bike Image 5">
       </div>
     </div>
   </section>
   
+  <!-- Features Section -->
   <section class="features">
     <h2>Innovate Your Ride Experience</h2>
     <p>Discover seamless biking with our intuitive app designed for every ride.</p>
     <div class="features-grid">
-        <div class="feature-card">
-            <h3>Secure Login</h3>
-            <p>Experience secure login with advanced OTP verification.</p>
-            <a href="#">Learn more</a>
-        </div>
-        <div class="feature-card">
-            <h3>OTP Verification</h3>
-            <p>OTP verifies phone number for secure access.</p>
-            <a href="#">Learn more</a>
-        </div>
-        <div class="feature-card">
-            <h3>User Profiles</h3>
-            <p>Manage your account with detailed user profiles.</p>
-            <a href="#">Learn more</a>
-        </div>
-        <div class="feature-card">
-            <h3>Map Integration</h3>
-            <p>Real-time map shows nearby bikes for easy access.</p>
-            <a href="#">Learn more</a>
-        </div>
-        <div class="feature-card">
-            <h3>Secure Payments</h3>
-            <p>Ensures fast and secure e-payments for rides.</p>
-            <a href="#">Learn more</a>
-        </div>
-        <div class="feature-card">
-            <h3>Secure Access</h3>
-            <p>Ensures your data is protected while you ride.</p>
-            <a href="#">Learn more</a>
-        </div>
-        <div class="feature-card">
-            <h3>Eco Tracking</h3>
-            <p>Monitor and enhance your eco-friendly biking habits.</p>
-            <a href="#">Learn more</a>
-        </div>
-        <div class="feature-card">
-            <h3>Social Connectivity</h3>
-            <p>Connect with friends and compete to top the leaderboard.</p>
-            <a href="#">Learn more</a>
-        </div>
+      <!-- Feature Cards -->
+      <div class="feature-card">
+        <h3>Secure Login</h3>
+        <p>Experience secure login with advanced OTP verification.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div class="feature-card">
+        <h3>OTP Verification</h3>
+        <p>OTP verifies phone number for secure access.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div class="feature-card">
+        <h3>User Profiles</h3>
+        <p>Manage your account with detailed user profiles.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div class="feature-card">
+        <h3>Map Integration</h3>
+        <p>Real-time map shows nearby bikes for easy access.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div class="feature-card">
+        <h3>Secure Payments</h3>
+        <p>Ensures fast and secure e-payments for rides.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div class="feature-card">
+        <h3>Secure Access</h3>
+        <p>Ensures your data is protected while you ride.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div class="feature-card">
+        <h3>Eco Tracking</h3>
+        <p>Monitor and enhance your eco-friendly biking habits.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div class="feature-card">
+        <h3>Social Connectivity</h3>
+        <p>Connect with friends and compete to top the leaderboard.</p>
+        <a href="#">Learn more</a>
+      </div>
     </div>
-</section>
-
-<!-- commtues section -->
-<section class="commute-section">
+  </section>
+  
+  <!-- Commute Section -->
+  <section class="commute-section">
     <h2>Empower Commutes with Our App</h2>
     <p>Discover easy, secure, and smart ways to ride e-bikes.</p>
     <div class="commute-grid">
-        <div class="commute-card">
-            <img src="commute1.jpg" alt="Smart Navigation">
-            <h3>Smart Navigation</h3>
-            <p>Ensure secure transactions with encrypted payments for a safe riding experience.</p>
-            <a href="#">Learn more</a>
-        </div>
-        <div class="commute-card">
-            <img src="commute2.jpg" alt="Real-time Tracking">
-            <h3>Real-time Tracking</h3>
-            <p>Track your ride progress and ETA with real-time updates on your journey.</p>
-            <a href="#">Learn more</a>
-        </div>
-        <div class="commute-card">
-            <img src="commute3.jpg" alt="Secure Payments">
-            <h3>Secure Payments</h3>
-            <p>Navigate to the nearest electric bike with intuitive route mapping.</p>
-            <a href="#">Learn more</a>
-        </div>
+      <div class="commute-card">
+        <img src="images/commute1.jpg" alt="Smart Navigation">
+        <h3>Smart Navigation</h3>
+        <p>Ensure secure transactions with encrypted payments for a safe riding experience.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div class="commute-card">
+        <img src="images/commute2.jpg" alt="Real-time Tracking">
+        <h3>Real-time Tracking</h3>
+        <p>Track your ride progress and ETA with real-time updates on your journey.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div class="commute-card">
+        <img src="images/commute3.jpg" alt="Secure Payments">
+        <h3>Secure Payments</h3>
+        <p>Navigate to the nearest electric bike with intuitive route mapping.</p>
+        <a href="#">Learn more</a>
+      </div>
     </div>
-</section>
-
-
-<!-- testimonial Section -->
-<section class="testimonial-section">
+  </section>
+  
+  <!-- Testimonial Section -->
+  <section class="testimonial-section">
     <h2>What Founders are Excited About</h2>
     <p>Hear from developers and riders embracing innovation.</p>
     
     <div class="slider">
       <div class="slider-content">
         <div class="slide active">
-          <img src="testimonial1.jpg" alt="Testimonial Image">
+          <img src="images/testimonial1.jpg" alt="Testimonial Image">
           <p class="testimonial-text">"Back in my college days, the only option to get in and out of campus was the shuttle bus service. Most of the time, it was overcrowded, leading to delays and frustrations. On top of that, during emergencies, it was almost impossible to get in or out of campus quickly. Other alternatives like bikes or autos were far too expensive for a regular commute. That's when I realized there had to be a better, more efficient way to travel. So, I came up with the idea of an easy, accessible bike-sharing solution — something that lets you take a bike anytime you need it, travel efficiently, and avoid the hassles of rush hours and high costs. It’s designed with one goal: to make your commute simple, stress-free, and affordable."</p>
-          <p class="testimonial-author">Sathish, Co-founder at Saha Commute</p>
+          <p class="testimonial-author">Sathish, Co-founder at Saho Commute</p>
         </div>
 
         <div class="slide">
-          <img src="testimonial1.jpg" alt="Testimonial Image">
+          <img src="images/testimonial2.jpg" alt="Testimonial Image">
           <p class="testimonial-text">"This app has revolutionized how I commute daily. With its intuitive design and seamless connectivity to the nearest bike stations, I find and unlock bikes in seconds. The whole process from registration, unlocking, and payment is streamlined, leaving me more time to focus on what really matters — exploring the college surrounding without hassle or delay. Highly recommend it!"</p>
-          <p class="testimonial-author">Sathish, Co-founder at Saha Commute</p>
+          <p class="testimonial-author">Anita, Developer at Saho Commute</p>
         </div>
 
         <div class="slide">
-          <img src="testimonial1.jpg" alt="Testimonial Image">
-          <p class="testimonial-text">"This app has revolutionized how I commute daily. With its intuitive design and seamless connectivity to the nearest bike stations, I find and unlock bikes in seconds. The whole process from registration, unlocking, and payment is streamlined, leaving me more time to focus on what really matters — exploring the college surrounding without hassle or delay. Highly recommend it!"</p>
-          <p class="testimonial-author">Sathish, Co-founder at Saha Commute</p>
+          <img src="images/testimonial3.jpg" alt="Testimonial Image">
+          <p class="testimonial-text">"Using Saho Commute has transformed my daily rides. The real-time tracking and secure payments make every journey smooth and worry-free. Plus, connecting with friends and competing on the leaderboard adds a fun social aspect to biking."</p>
+          <p class="testimonial-author">Raj, Rider at Saho Commute</p>
         </div>
 
         <div class="slide">
-          <img src="testimonial-image.jpg" alt="Testimonial Image">
-          <p class="testimonial-text">"This app has revolutionized how I commute daily. With its intuitive design and seamless connectivity to the nearest bike stations, I find and unlock bikes in seconds. The whole process from registration, unlocking, and payment is streamlined, leaving me more time to focus on what really matters — exploring the college surrounding without hassle or delay. Highly recommend it!"</p>
-          <p class="testimonial-author">Sathish, Co-founder at Saha Commute</p>
+          <img src="images/testimonial4.jpg" alt="Testimonial Image">
+          <p class="testimonial-text">"The app's smart navigation feature ensures I always find the quickest and safest routes. It's reliable and user-friendly, making my commutes efficient and enjoyable."</p>
+          <p class="testimonial-author">Meera, UX Designer at Saho Commute</p>
         </div>
       </div>
 
@@ -168,28 +177,22 @@
     </div>
   </section>
 
-  <script src="script.js"></script>
-
-
   <!-- Sign Up Section -->
   <section class="signup-section">
     <h2>Join Our Journey</h2>
     <p>Stay ahead with cutting-edge app updates & insights.</p>
     <div class="signup-form">
-      
       <a href="signup-page.html">
         <button type="button" class="signup-btn">Sign Up</button>
       </a>
-
     </div>
   </section>
-
 
   <!-- Footer Section -->
   <footer>
     <div class="footer-content">
       <div class="footer-brand">
-        <img src="vtp.jpg" alt="Saho Commute Logo">
+        <img src="images/vtp.jpg" alt="Saho Commute Logo">
         <p>Saho Commute</p>
         <p>© 2024 SahoRides</p>
       </div>
@@ -226,6 +229,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
