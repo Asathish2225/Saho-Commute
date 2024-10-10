@@ -71,26 +71,52 @@ nav ul li a {
   cursor: pointer;
 }
 
-.hamburger div {
-  width: 25px;
-  height: 3px;
+/* Styles for the hamburger menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.bar {
+  width: 100%;
+  height: 4px;
   background-color: #333;
-  margin: 4px 0;
-  transition: 0.4s;
+  transition: all 0.3s ease;
 }
 
-/* Change hamburger to X when active */
-.hamburger.active .bar1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
+/* When the hamburger is active, transform it into a cross */
+.hamburger.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
-.hamburger.active .bar2 {
+.hamburger.active .bar:nth-child(2) {
   opacity: 0;
 }
 
-.hamburger.active .bar3 {
-  transform: rotate(45deg) translate(-5px, -6px);
+.hamburger.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
+
+/* Media query to display the hamburger menu on smaller screens */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
 
 /* Main Section */
 main {
